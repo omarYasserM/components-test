@@ -8,35 +8,40 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
-    <Section yPadding="py-6">
+  <Background color=' bg-[url("/assets/images/plasticBags.png")]  bg-cover bg-no-repeat  text-white relative overflow-hidden'>
+
+    <Section yPadding="py-6 z-10">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            <a>GitHub</a>
+            <a>About Us</a>
           </Link>
         </li>
         <li>
           <Link href="/">
-            <a>Sign in</a>
+            <a>Services</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a>Contact us</a>
           </Link>
         </li>
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-20 pb-32 z-10">
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'Transforming the Future of Plastics: Discover Our Innovation and Expertise\n'}
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description="Experience the Future of Plastics with Our Innovative Solutions. Trust Our Expertise to Meet Your Unique Needs."
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
             <a>
-              <Button xl>Download Your Free Theme</Button>
+              <Button xl>Contact Us</Button>
             </a>
           </Link>
         }
